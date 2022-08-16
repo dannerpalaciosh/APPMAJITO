@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Feliz 4to Aniversario mi amor :3 Te amooooooooo ❤</h3>
+        <input type="checkbox" id="pausa">
+        <div class="slider">
+          <div class="show">
+            <img src="https://scontent.ftgu1-2.fna.fbcdn.net/v/t1.6435-9/119449862_2911825058923257_406108239789086066_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHr1S44GLYrt5PXhAI5BAaf9xE0T2QTjc33ETRPZBONzQ3ZERsjRH9nQ5xnaS6PLS8YGJstjUZ3HrxDy41v5LrU&_nc_ohc=SPdk4f0NdyQAX-UZUYF&_nc_ht=scontent.ftgu1-2.fna&oh=00_AT9apjwpVohmRuaWmquTUouvLkDW9ElKKLOtU93SsRNepA&oe=63211309">
+            <img src="https://scontent.ftgu1-2.fna.fbcdn.net/v/t1.6435-9/149370573_1112509405837877_2222479301532305503_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFKtRwz3r17mj32ivp76s-9BQk_AM5PJ8MFCT8Azk8nwypwKJez1ZsEPRcTNaLdiwrOTwtOoQgClKpET5dfaVw8&_nc_ohc=PahNeEt-8_kAX8r8H_Q&_nc_ht=scontent.ftgu1-2.fna&oh=00_AT8fwdbuwiMibIR8ZS-KVFf2ztiTUtEeVsQV64f0yA3DhA&oe=631EEF94">
+            <img src="https://scontent.ftgu1-1.fna.fbcdn.net/v/t39.30808-6/243906645_1255107391578077_2484173035679176334_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGTDWvN_KRw8QLuTggInSVBry2WSa5uw0KvLZZJrm7DQiUdJDWdkL7Td_Wn7jXaM3Yr8piVs6A5Vz5f8AMjHmmF&_nc_ohc=xATD877MoG0AX9LEMaK&tn=EAJUlQZvL2Y8PKuD&_nc_ht=scontent.ftgu1-1.fna&oh=00_AT9NGK2ZZNYckHK4P2Dm87n1Qskuf6UVzOCjPhVQ_OkKrw&oe=630093EF">
+            <img src="https://scontent.ftgu1-1.fna.fbcdn.net/v/t1.6435-9/84054905_2376552619117173_963875366567411712_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHg_jUnJqczmBTnILhJpqZmKhh2Z6Q2fVkqGHZnpDZ9WeE58YOnHAQeUr6JPQyf6w3uRxMmApd-E2XE1iyivVEN&_nc_ohc=W31N7RQ_ETkAX-JDEmM&_nc_ht=scontent.ftgu1-1.fna&oh=00_AT-xIzZxxz002bSzyIjno1rPbyi9uTS5BCEvVJnhHdETZQ&oe=631F29C5">
+          </div>
+        </div>
+        <label for="pausa">Parar ❤</label> <label for="pausa"><a href="index2.html">Inicio 🤠</a></label><br>
+      <audio controls autoplay src="Canciones/y2mate.com - Bésame  Ricardo Montaner  Letra.mp3"></audio>
+      </div>
+
+    
+</body>
+<style>
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+audio{
+    padding: 2%;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(-45deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);;
+  background-size: 400% 400%;
+  position: relative;
+  animation: animate 7.5s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/**
+ * Slider automático de 4 imágenes
+ * Solo CSS, responsive
+ * (cc) 3con14.pro
+ */
+
+ :root {
+  --base  : 480px;
+  --ancho : calc(var(--base) * 1);
+}
+* {
+  margin     : 0; padding: 0;
+  box-sizing : border-box;
+}
+html {
+  font-size  : 16px;
+  color      : #fff;
+  text-align : center;
+  background : tan;
+}
+body {
+  min-height : 100vh;
+  display    : flex;
+}
+.container {
+  max-width        : var(--ancho);
+  width            : 96%;
+  margin           : auto;
+  background-color : rgba(0,0,0,0.1);
+}
+.slider {
+  max-width     : var(--ancho);
+  height        : calc(var(--ancho) / 1.8);
+
+  position      : relative;
+  overflow      : hidden;
+  margin        : auto;
+}
+.show {
+  position    : absolute;
+  top         : 0;
+  left        : 0;
+  display     : table;
+  line-height : 0;
+  width       : 400%;
+  height      : 400%;
+  animation   : ani 8s ease-in infinite alternate;
+}
+/*
+ .show:hover {
+  cursor               : pointer;
+  animation-play-state : paused;
+}  */
+img {
+  max-width : 30%;
+  height    : 30%;
+  opacity   : 1;
+}
+
+h3 { margin: 0.2em 0; }
+input[type="checkbox"] { display: none; }
+label { 
+  margin      : 1em;
+  line-height : 2em;
+  cursor      : pointer;
+}
+input[type="checkbox"]:checked ~ label { 
+  color: red; font-weight: 900;
+}
+input[type="checkbox"] + div.slider > div.show { 
+  animation-play-state: running;
+}
+input[type="checkbox"]:checked + div.slider > div.show { 
+  animation-play-state: paused;
+}
+@keyframes ani {
+   0%,20%   { left: 0; }
+  27%,47%   { left: -100%; }
+  54%,74%   { left: -200%; }
+  81%,100%  { left: -300%; }
+}
+
+</style>
+
+
+</html>
